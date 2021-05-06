@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delish</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Food is Fuel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="Food.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Delish</h2>
+            <h3>Count memories, not Calories</h3>
+            <a href="menu.html">Order Online</a>
+        </div>
+        <ul class="social">
+            <li>
+                <a href="#"><img src="facebook (1).png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="twitter (1).png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="instagram (1).png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Gift Card</a></li>
+            <li><a href="#">Mail Order</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+</body>
+
+</html>
